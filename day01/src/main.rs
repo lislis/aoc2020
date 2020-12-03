@@ -1,13 +1,13 @@
-use utils;
+use utils::utils;
 
 fn main() {
     let path = format!("{}/resources/input.csv", env!("CARGO_MANIFEST_DIR"));
     let input = utils::read_and_parse(&path);
 
     let result = day01_1(&input);
-    println!("{:?}", result);
+    println!("Day 01 - 1: {:?}", result);
     let result2 = day01_2(&input);
-    println!("{:?}", result2);
+    println!("Day 01 - 2: {:?}", result2);
 }
 
 fn day01_2(input: &Vec<i64>) -> Option<i64> {
